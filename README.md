@@ -32,3 +32,8 @@ android 12 이상 대상앱에서 블루투스 권한 선언
 
 장치 검색 및 블루투스 설정 권한 선언
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+android 10, 11 백그라운드 위치 액세스
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+BLE가 중요 기능인 경우(해당 기능이 없는 기기의 경우, 앱스토어에서 사용자에게 앱 숨김)
+    <uses-feature android:name="android.hardware.bluetooth_le" android:required="true"/>
+
