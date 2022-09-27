@@ -37,3 +37,9 @@ android 10, 11 백그라운드 위치 액세스
 BLE가 중요 기능인 경우(해당 기능이 없는 기기의 경우, 앱스토어에서 사용자에게 앱 숨김)
     <uses-feature android:name="android.hardware.bluetooth_le" android:required="true"/>
 
+경로 탐색 알고리즘: a* 알고리즘
+    수식: F = G + H 
+    F = 현재까지 이동에 걸린 비용과 예상 비용의 총합
+    G = 시작점~현재 위치까지의 경로를 따라이동하는데 소요되는 비용
+    H = 현재 위치 ~ 목적지까지의 예상 이동 비용(장애물 무시)
+    
